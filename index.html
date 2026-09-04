@@ -1,1 +1,2794 @@
+<!DOCTYPE html>
+<html lang="fa-AF" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>مرکز آموزشی و توانبخشی نگین | هر کودک یک نگین</title>
+
+  <meta name="description" content="مرکز آموزشی و توانبخشی نگین در کابل؛ ارائه خدمات آموزش ویژه، فیزیوتراپی، کاردرمانی، گفتاردرمانی، حمایت روانی و پشتیبانی از خانواده‌های کودکان دارای معلولیت.">
+  <meta name="keywords" content="مرکز نگین, توانبخشی کودکان, آموزش ویژه, فیزیوتراپی, کاردرمانی, گفتاردرمانی, کابل, افغانستان">
+  <meta name="author" content="Negin Educational & Rehabilitation Center">
+  <meta name="theme-color" content="#071E57">
+
+  <meta property="og:title" content="مرکز آموزشی و توانبخشی نگین">
+  <meta property="og:description" content="هر کودک یک نگین؛ آموزش، توانبخشی و حمایت برای کودکان دارای معلولیت.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #071E57;
+      --navy-2: #0B2A73;
+      --blue: #10479C;
+      --cyan: #12AFC4;
+      --gold: #D6A83D;
+      --green: #159B67;
+      --purple: #7A4CC2;
+      --orange: #F08A35;
+      --pink: #D94D8A;
+
+      --white: #ffffff;
+      --light: #F6F8FC;
+      --light-2: #EEF3FA;
+      --text: #172033;
+      --muted: #657085;
+      --border: #E2E8F0;
+
+      --shadow: 0 15px 45px rgba(7, 30, 87, .08);
+      --shadow-lg: 0 25px 70px rgba(7, 30, 87, .13);
+
+      --radius: 20px;
+      --radius-sm: 14px;
+
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Tajawal", sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.9;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================== */
+
+    .topbar {
+      background: var(--navy);
+      color: #fff;
+      font-size: .82rem;
+    }
+
+    .topbar-inner {
+      min-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a {
+      opacity: .9;
+      transition: .25s;
+    }
+
+    .topbar a:hover {
+      opacity: 1;
+      color: #fff;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      min-width: 230px;
+    }
+
+    .brand-logo {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: var(--light-2);
+      border: 1px solid var(--border);
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.05rem;
+      font-weight: 900;
+      line-height: 1.4;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 10px 12px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: .9rem;
+      border-radius: 10px;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+      background: var(--light);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn {
+      border: 0;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 19px;
+      border-radius: 12px;
+      font-weight: 800;
+      transition: .25s;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(7,30,87,.18);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--navy);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #161616;
+    }
+
+    .btn-green {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .btn-cyan {
+      background: var(--cyan);
+      color: #fff;
+    }
+
+    .menu-btn {
+      display: none;
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--navy);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(18,175,196,.14), transparent 25%),
+        radial-gradient(circle at 90% 10%, rgba(214,168,61,.15), transparent 25%),
+        linear-gradient(135deg, #fff 0%, #F2F6FC 100%);
+      padding: 90px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: rgba(16,71,156,.05);
+      left: -160px;
+      bottom: -180px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 55px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16,71,156,.08);
+      color: var(--blue);
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: .83rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.25;
+      font-weight: 900;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero-subtitle {
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 680px;
+      margin-bottom: 25px;
+    }
+
+    .slogan {
+      display: inline-block;
+      color: var(--navy);
+      font-size: 1.15rem;
+      font-weight: 900;
+      background: rgba(214,168,61,.16);
+      border-right: 4px solid var(--gold);
+      padding: 7px 14px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(255,255,255,.9);
+      border-radius: 30px;
+      padding: 28px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .hero-logo-wrap {
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 22px;
+      border-radius: 42px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 34px;
+      object-fit: cover;
+    }
+
+    .hero-card h3 {
+      text-align: center;
+      color: var(--navy);
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+
+    .hero-card p {
+      text-align: center;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .hero-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .mini {
+      padding: 13px 8px;
+      border-radius: 13px;
+      background: var(--light);
+      text-align: center;
+      font-weight: 800;
+      font-size: .8rem;
+    }
+
+    .mini:nth-child(1) { color: var(--blue); }
+    .mini:nth-child(2) { color: var(--green); }
+    .mini:nth-child(3) { color: var(--purple); }
+
+    /* =========================
+       STATS
+    ========================== */
+
+    .stats {
+      margin-top: -25px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 23px 15px;
+      text-align: center;
+      border-left: 1px solid var(--border);
+    }
+
+    .stat:last-child {
+      border-left: 0;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.55rem;
+      font-weight: 900;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: .83rem;
+      font-weight: 700;
+    }
+
+    /* =========================
+       GENERAL SECTION
+    ========================== */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-kicker {
+      color: var(--blue);
+      font-size: .85rem;
+      font-weight: 900;
+      margin-bottom: 7px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+      line-height: 1.35;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-box h3 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+
+    .about-box p {
+      color: var(--muted);
+      margin-bottom: 13px;
+    }
+
+    .about-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .about-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 10px 0;
+      font-weight: 700;
+    }
+
+    .check {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .about-highlight {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: #fff;
+      padding: 38px;
+      border-radius: 28px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-highlight .quote {
+      font-size: 1.35rem;
+      line-height: 1.8;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .about-highlight p {
+      opacity: .9;
+      font-size: .95rem;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      background: #fff;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 27px;
+      box-shadow: 0 7px 25px rgba(7,30,87,.05);
+      transition: .3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      left: -35px;
+      bottom: -35px;
+      opacity: .08;
+      background: currentColor;
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      background: var(--light);
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .blue-card { color: var(--blue); }
+    .green-card { color: var(--green); }
+    .purple-card { color: var(--purple); }
+    .orange-card { color: var(--orange); }
+    .pink-card { color: var(--pink); }
+    .cyan-card { color: var(--cyan); }
+
+    /* =========================
+       STORY
+    ========================== */
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .story-card {
+      background: #fff;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .story-card h3 {
+      color: var(--navy);
+      margin-bottom: 13px;
+    }
+
+    .story-card p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      margin-top: 20px;
+      padding: 20px;
+      border-right: 4px solid var(--gold);
+      background: #FFF9EA;
+      border-radius: 10px;
+      color: #634A0B;
+      font-weight: 700;
+    }
+
+    /* =========================
+       FOUNDERS
+    ========================== */
+
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 22px;
+    }
+
+    .person-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 23px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .person-avatar {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      margin: 0 auto 17px;
+      display: grid;
+      place-items: center;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #fff;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+    }
+
+    .person-card:nth-child(2) .person-avatar {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+    }
+
+    .person-card:nth-child(3) .person-avatar {
+      background: linear-gradient(135deg, var(--gold), var(--orange));
+    }
+
+    .person-card h3 {
+      color: var(--navy);
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
+    .person-role {
+      color: var(--blue);
+      font-weight: 800;
+      font-size: .87rem;
+      margin-bottom: 13px;
+    }
+
+    .person-card p:last-child {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* =========================
+       AJMIR
+    ========================== */
+
+    .supporter {
+      background:
+        linear-gradient(135deg, rgba(7,30,87,.97), rgba(16,71,156,.96)),
+        #071E57;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .supporter-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .supporter-badge {
+      display: inline-block;
+      background: rgba(214,168,61,.18);
+      color: #F8D979;
+      border: 1px solid rgba(214,168,61,.4);
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .supporter h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.35;
+      margin-bottom: 17px;
+    }
+
+    .supporter p {
+      color: rgba(255,255,255,.82);
+      margin-bottom: 13px;
+    }
+
+    .supporter-quote {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 22px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .supporter-quote strong {
+      display: block;
+      color: #F8D979;
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+    }
+
+    .supporter-quote span {
+      color: rgba(255,255,255,.75);
+      font-size: .9rem;
+    }
+
+    /* =========================
+       VISION
+    ========================== */
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 22px;
+    }
+
+    .vision-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .vision-number {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--light-2);
+      margin-bottom: -12px;
+    }
+
+    .vision-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .vision-card p {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    /* =========================
+       WHY
+    ========================== */
+
+    .why {
+      background: var(--light-2);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 17px;
+    }
+
+    .why-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px 20px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .why-card strong {
+      display: block;
+      color: var(--navy);
+      margin: 9px 0;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    /* =========================
+       TRANSPARENCY
+    ========================== */
+
+    .transparency-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-right: 5px solid var(--orange);
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .transparency-box h3 {
+      color: var(--navy);
+      margin-bottom: 13px;
+    }
+
+    .transparency-box p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .transparency-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 25px;
+      margin-top: 20px;
+    }
+
+    .transparency-list li {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    /* =========================
+       SUPPORT
+    ========================== */
+
+    .support {
+      background: #fff;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 22px;
+    }
+
+    .support-card {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .support-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .support-card p {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .support-card .btn {
+      width: 100%;
+    }
+
+    /* =========================
+       NEGIN SMART
+    ========================== */
+
+    .smart {
+      background:
+        radial-gradient(circle at 90% 10%, rgba(18,175,196,.12), transparent 25%),
+        radial-gradient(circle at 10% 80%, rgba(122,76,194,.08), transparent 25%),
+        #F8FAFD;
+    }
+
+    .smart-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 45px;
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: 1fr .75fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .smart-box h2 {
+      color: var(--navy);
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .smart-box p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .smart-features {
+      list-style: none;
+      margin: 18px 0;
+    }
+
+    .smart-features li {
+      margin: 8px 0;
+      font-weight: 700;
+    }
+
+    .smart-visual {
+      min-height: 280px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .smart-visual .bot {
+      font-size: 4.5rem;
+      margin-bottom: 12px;
+    }
+
+    .smart-visual h3 {
+      font-size: 1.5rem;
+    }
+
+    /* =========================
+       TESTIMONIAL
+    ========================== */
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 22px;
+    }
+
+    .testimonial {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .testimonial p {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-bottom: 17px;
+    }
+
+    .testimonial strong {
+      color: var(--navy);
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+    }
+
+    .contact h2 {
+      color: #fff;
+    }
+
+    .contact-description {
+      color: rgba(255,255,255,.78);
+      margin-bottom: 25px;
+    }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      margin: 17px 0;
+      color: rgba(255,255,255,.9);
+    }
+
+    .contact-list .icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(255,255,255,.1);
+    }
+
+    .contact-list strong {
+      display: block;
+      color: #fff;
+    }
+
+    .contact-list span,
+    .contact-list a {
+      color: rgba(255,255,255,.72);
+      font-size: .9rem;
+    }
+
+    .map-box {
+      overflow: hidden;
+      border-radius: 23px;
+      min-height: 410px;
+      background: #fff;
+      border: 5px solid rgba(255,255,255,.08);
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      border: 0;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================== */
+
+    .final-cta {
+      padding: 70px 0;
+      background: linear-gradient(135deg, var(--gold), #E8C96E);
+      color: #1A1609;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(1.8rem,4vw,2.7rem);
+      margin-bottom: 10px;
+    }
+
+    .final-cta p {
+      max-width: 700px;
+      margin: 0 auto 22px;
+      font-weight: 600;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #041438;
+      color: #fff;
+      padding: 45px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 40px;
+      padding-bottom: 30px;
+    }
+
+    .footer-brand {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .footer-brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 13px;
+      object-fit: cover;
+    }
+
+    footer h3 {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer li,
+    footer a {
+      color: rgba(255,255,255,.65);
+      font-size: .85rem;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 7px 0;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 17px;
+      text-align: center;
+      color: rgba(255,255,255,.5);
+      font-size: .75rem;
+    }
+
+    /* =========================
+       FLOATING BUTTONS
+    ========================== */
+
+    .floating {
+      position: fixed;
+      left: 17px;
+      bottom: 18px;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .float-btn {
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,.18);
+      transition: .25s;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .float-whatsapp { background: #25D366; }
+    .float-phone { background: var(--blue); }
+
+    .to-top {
+      position: fixed;
+      right: 17px;
+      bottom: 18px;
+      width: 45px;
+      height: 45px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 900;
+      cursor: pointer;
+      z-index: 900;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+    }
+
+    .to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =========================
+       ANIMATION
+    ========================== */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 1050px) {
+      .nav-links a {
+        padding: 9px 7px;
+        font-size: .82rem;
+      }
+
+      .brand {
+        min-width: auto;
+      }
+
+      .nav-actions .btn {
+        padding: 10px 12px;
+        font-size: .8rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .topbar-left {
+        display: none;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-actions {
+        display: none;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 118px;
+        right: 4%;
+        left: 4%;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: var(--shadow-lg);
+        padding: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: .25s;
+      }
+
+      .nav-links.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .nav-links a {
+        text-align: center;
+        padding: 12px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .supporter-grid,
+      .contact-grid,
+      .smart-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 520px;
+        margin: auto;
+      }
+
+      .services-grid,
+      .people-grid,
+      .vision-grid,
+      .support-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .topbar {
+        display: none;
+      }
+
+      header {
+        top: 0;
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand-text strong {
+        font-size: .9rem;
+      }
+
+      .brand-text span {
+        font-size: .62rem;
+      }
+
+      .brand-logo {
+        width: 46px;
+        height: 46px;
+      }
+
+      .nav-links {
+        top: 72px;
+      }
+
+      .hero {
+        padding: 55px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: .98rem;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .stat {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .stat:nth-child(2) {
+        border-left: 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .services-grid,
+      .story-grid,
+      .people-grid,
+      .vision-grid,
+      .support-grid,
+      .testimonials,
+      .why-grid,
+      .transparency-list,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .smart-box {
+        padding: 25px;
+      }
+
+      .smart-box h2 {
+        font-size: 1.8rem;
+      }
+
+      .map-box {
+        min-height: 300px;
+      }
+
+      .map-box iframe {
+        min-height: 300px;
+      }
+
+      .floating {
+        left: 12px;
+        bottom: 12px;
+      }
+
+      .to-top {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       TOP BAR
+  ========================== -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span>مرکز آموزشی و توانبخشی نگین</span>
+        <span>کابل، افغانستان</span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="tel:+93786838002">📞 ۰۷۸۶۸۳۸۰۰۲</a>
+        <a href="mailto:negineducationcenter@gmail.com">
+          ✉️ negineducationcenter@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+        <img
+          class="brand-logo"
+          src="https://drive.google.com/thumbnail?id=1xFpErV2qCevAlACuaP2vpKcIwjzsOOZP&sz=w1000"
+          alt="لوگوی مرکز آموزشی و توانبخشی نگین"
+        >
+
+        <div class="brand-text">
+          <strong>مرکز آموزشی و توانبخشی نگین</strong>
+          <span>هر کودک یک نگین</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#about">درباره ما</a></li>
+          <li><a href="#services">خدمات</a></li>
+          <li><a href="#team">تیم ما</a></li>
+          <li><a href="#support">همکاری</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#contact">تماس با ما</a>
+      </div>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="باز کردن منو"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="reveal">
+
+          <div class="eyebrow">
+            💎 آموزش • توانبخشی • امید
+          </div>
+
+          <h1>
+            مرکز آموزشی و توانبخشی
+            <span>نگین</span>
+          </h1>
+
+          <div class="slogan">
+            «هر کودک یک نگین»
+          </div>
+
+          <p class="hero-subtitle">
+            ما برای ساختن محیطی امن، انسانی و فراگیر تلاش می‌کنیم؛
+            محیطی که کودکان دارای معلولیت بتوانند در آن آموزش ببینند،
+            توانایی‌های خود را رشد دهند و با عزت و امید به آینده نگاه کنند.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">
+              مشاهده خدمات
+            </a>
+
+            <a
+              href="https://wa.me/93786838002"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-green"
+            >
+              💬 تماس در واتساپ
+            </a>
+
+            <a href="#support" class="btn btn-outline">
+              🤝 همکاری با نگین
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero-card reveal">
+
+          <div class="hero-logo-wrap">
+            <img
+              class="hero-logo"
+              src="https://drive.google.com/thumbnail?id=1xFpErV2qCevAlACuaP2vpKcIwjzsOOZP&sz=w1000"
+              alt="لوگوی نگین"
+            >
+          </div>
+
+          <h3>هر کودک، یک فرصت</h3>
+
+          <p>
+            با آموزش، توانبخشی، خانواده و جامعه می‌توانیم فرصت‌های تازه‌ای بسازیم.
+          </p>
+
+          <div class="hero-mini-grid">
+            <div class="mini">🎓 آموزش ویژه</div>
+            <div class="mini">🧩 توانبخشی</div>
+            <div class="mini">❤️ حمایت خانواده</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <div class="stats">
+      <div class="container">
+
+        <div class="stats-grid reveal">
+
+          <div class="stat">
+            <strong>کابل</strong>
+            <span>افغانستان</span>
+          </div>
+
+          <div class="stat">
+            <strong>۶+</strong>
+            <span>حوزه خدماتی</span>
+          </div>
+
+          <div class="stat">
+            <strong>۱</strong>
+            <span>هدف مشترک؛ توانمندسازی کودک</span>
+          </div>
+
+          <div class="stat">
+            <strong>∞</strong>
+            <span>امید برای آینده</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">درباره نگین</div>
+
+          <h2 class="section-title">
+            خانه‌ای برای آموزش، رشد و توانمندی
+          </h2>
+
+          <p class="section-description">
+            نگین با این باور شکل گرفته است که تفاوت، دلیل محرومیت نیست.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-highlight reveal">
+            <div class="quote">
+              «هیچ کودکی نباید به دلیل معلولیت، از آموزش، توانبخشی و فرصت‌های زندگی محروم بماند.»
+            </div>
+
+            <p>
+              هدف ما ایجاد فضایی است که کودک در آن دیده شود،
+              شنیده شود و توانایی‌هایش مورد توجه قرار گیرد.
+            </p>
+          </div>
+
+          <div class="about-box reveal">
+
+            <h3>سلام، ما نگین هستیم.</h3>
+
+            <p>
+              مرکز آموزشی و توانبخشی نگین در کابل با هدف حمایت از کودکان
+              دارای معلولیت و نیازهای ویژه ایجاد شده است.
+            </p>
+
+            <p>
+              ما تلاش می‌کنیم خدمات آموزشی، توانبخشی و حمایتی را با
+              رویکردی انسانی، خانواده‌محور و متناسب با نیازهای هر کودک
+              ارائه کنیم.
+            </p>
+
+            <ul class="about-list">
+              <li>
+                <span class="check">✓</span>
+                آموزش متناسب با توانایی و نیاز کودک
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                توانبخشی و تقویت مهارت‌های کاربردی
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                مشارکت و آموزش خانواده‌ها
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                احترام به کرامت و حقوق کودک
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">خدمات ما</div>
+
+          <h2 class="section-title">
+            خدماتی برای رشد همه‌جانبه کودک
+          </h2>
+
+          <p class="section-description">
+            خدمات مرکز بر اساس نیاز کودک و با مشارکت خانواده طراحی می‌شود.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card blue-card reveal">
+            <div class="service-icon">🎓</div>
+            <h3>آموزش ویژه</h3>
+            <p>
+              برنامه‌های آموزشی متناسب با سطح توانایی، نیاز و سرعت یادگیری هر کودک.
+            </p>
+          </article>
+
+          <article class="service-card green-card reveal">
+            <div class="service-icon">🦽</div>
+            <h3>فیزیوتراپی</h3>
+            <p>
+              کمک به تقویت حرکت، تعادل، هماهنگی و عملکردهای جسمی کودک.
+            </p>
+          </article>
+
+          <article class="service-card purple-card reveal">
+            <div class="service-icon">🧩</div>
+            <h3>کاردرمانی</h3>
+            <p>
+              تقویت مهارت‌های حرکتی، حسی، شناختی و فعالیت‌های روزمره.
+            </p>
+          </article>
+
+          <article class="service-card orange-card reveal">
+            <div class="service-icon">🗣️</div>
+            <h3>گفتاردرمانی</h3>
+            <p>
+              حمایت از مهارت‌های گفتار، زبان، ارتباط و ارتباطات جایگزین.
+            </p>
+          </article>
+
+          <article class="service-card pink-card reveal">
+            <div class="service-icon">🧠</div>
+            <h3>خدمات روان‌شناختی</h3>
+            <p>
+              حمایت روانی و عاطفی از کودکان و خانواده‌ها در مسیر رشد و سازگاری.
+            </p>
+          </article>
+
+          <article class="service-card cyan-card reveal">
+            <div class="service-icon">👨‍👩‍👧</div>
+            <h3>حمایت از خانواده</h3>
+            <p>
+              مشاوره، آموزش والدین و ایجاد ارتباط میان خانواده و تیم تخصصی.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         STORY
+    ========================== -->
+
+    <section id="story">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">داستان نگین</div>
+
+          <h2 class="section-title">
+            رویایی که با اراده، قدم‌به‌قدم ساخته شد
+          </h2>
+        </div>
+
+        <div class="story-grid">
+
+          <div class="story-card reveal">
+            <h3>از یک دغدغه تا یک مرکز</h3>
+
+            <p>
+              مرکز نگین حاصل یک دغدغه انسانی برای ایجاد فرصت‌های بهتر
+              آموزشی و توانبخشی برای کودکان دارای معلولیت است.
+            </p>
+
+            <p>
+              اسدالله حیدری و ساحل حیدری با مشاهده نیازهای کودکان و خانواده‌ها،
+              مسیر ایجاد یک محیط حمایتی و آموزشی را دنبال کردند.
+            </p>
+
+            <p>
+              این مسیر با تلاش، پیگیری و همراهی افراد همدل ادامه پیدا کرد.
+            </p>
+          </div>
+
+          <div class="story-card reveal">
+            <h3>همراهی در مسیر</h3>
+
+            <p>
+              در این مسیر، حمایت و همراهی اجمیر خان میرزاد نیز نقش مهمی
+              در پیشبرد این هدف داشته است.
+            </p>
+
+            <p>
+              مرکز نگین از همه افرادی که برای ایجاد فرصت‌های بهتر برای کودکان
+              همکاری می‌کنند، قدردانی می‌کند.
+            </p>
+
+            <div class="quote-box">
+              «با اراده می‌توان، با همت می‌سازیم»
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         TEAM
+    ========================== -->
+
+    <section id="team">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">تیم و بنیان‌گذاران</div>
+
+          <h2 class="section-title">
+            انسان‌ها پشت این مأموریت
+          </h2>
+        </div>
+
+        <div class="people-grid">
+
+          <article class="person-card reveal">
+            <div class="person-avatar">ا</div>
+
+            <h3>اسدالله حیدری</h3>
+
+            <div class="person-role">
+              بنیان‌گذار و مدیر اجرایی
+            </div>
+
+            <p>
+              مسئول هدایت اجرایی و توسعه مسیر فعالیت‌های مرکز
+              با تمرکز بر حمایت از کودکان و خانواده‌ها.
+            </p>
+          </article>
+
+          <article class="person-card reveal">
+            <div class="person-avatar">س</div>
+
+            <h3>ساحل حیدری</h3>
+
+            <div class="person-role">
+              بنیان‌گذار و مدیر آموزشی
+            </div>
+
+            <p>
+              مسئول برنامه‌ریزی و نظارت آموزشی و تلاش برای ایجاد
+              محیط یادگیری مناسب برای کودکان.
+            </p>
+          </article>
+
+          <article class="person-card reveal">
+            <div class="person-avatar">ا</div>
+
+            <h3>اجمیر خان میرزاد</h3>
+
+            <div class="person-role">
+              مشاور ارشد و حامی کلیدی
+            </div>
+
+            <p>
+              همراه و حامی این مسیر انسانی با تأکید بر مشارکت،
+              همدلی و ساختن فرصت‌های پایدار.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SUPPORTER
+    ========================== -->
+
+    <section class="supporter" id="supporter">
+
+      <div class="container supporter-grid">
+
+        <div class="supporter-quote reveal">
+          <strong>
+            «با اراده می‌توان، با همت می‌سازیم»
+          </strong>
+
+          <span>
+            اجمیر خان میرزاد<br>
+            مشاور ارشد و حامی کلیدی مرکز
+          </span>
+        </div>
+
+        <div class="reveal">
+
+          <div class="supporter-badge">
+            سپاس از همراهی
+          </div>
+
+          <h2>
+            همراهی‌ای که امید را به عمل نزدیک می‌کند
+          </h2>
+
+          <p>
+            مرکز نگین از همراهی اجمیر خان میرزاد در مسیر شکل‌گیری و
+            پیشبرد این هدف انسانی قدردانی می‌کند.
+          </p>
+
+          <p>
+            باور ما این است که ساختن آینده بهتر برای کودکان،
+            نتیجه همکاری و مسئولیت‌پذیری جمعی است.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         VISION / MISSION / VALUES
+    ========================== -->
+
+    <section id="vision">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">مسیر ما</div>
+
+          <h2 class="section-title">
+            چشم‌انداز، مأموریت و ارزش‌های ما
+          </h2>
+        </div>
+
+        <div class="vision-grid">
+
+          <article class="vision-card reveal">
+            <div class="vision-number">۰۱</div>
+
+            <h3>چشم‌انداز</h3>
+
+            <p>
+              جامعه‌ای فراگیر که در آن کودکان دارای معلولیت
+              فرصت آموزش، توانبخشی، رشد و مشارکت اجتماعی داشته باشند.
+            </p>
+          </article>
+
+          <article class="vision-card reveal">
+            <div class="vision-number">۰۲</div>
+
+            <h3>مأموریت</h3>
+
+            <p>
+              ارائه خدمات آموزشی، توانبخشی و حمایتی با تمرکز بر
+              توانمندسازی کودک و مشارکت فعال خانواده.
+            </p>
+          </article>
+
+          <article class="vision-card reveal">
+            <div class="vision-number">۰۳</div>
+
+            <h3>ارزش‌های ما</h3>
+
+            <p>
+              کرامت انسانی، احترام، همدلی، مسئولیت‌پذیری،
+              مشارکت خانواده، شفافیت و باور به توانمندی کودک.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         WHY NEGIN
+    ========================== -->
+
+    <section class="why" id="why">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">چرا نگین؟</div>
+
+          <h2 class="section-title">
+            چون هر کودک شایسته فرصت است
+          </h2>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card reveal">
+            <div>❤️</div>
+            <strong>محیط انسانی</strong>
+            <p>
+              کودک باید احساس امنیت، احترام و پذیرفته‌شدن داشته باشد.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div>🎯</div>
+            <strong>تمرکز بر توانایی</strong>
+            <p>
+              به جای تمرکز صرف بر محدودیت‌ها، توانایی‌های کودک را رشد می‌دهیم.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div>👨‍👩‍👧</div>
+            <strong>خانواده‌محور</strong>
+            <p>
+              خانواده بخش مهمی از مسیر آموزش و توانبخشی کودک است.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div>🤝</div>
+            <strong>همکاری</strong>
+            <p>
+              تغییر پایدار با همکاری متخصصان، خانواده‌ها و جامعه ممکن است.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         TRANSPARENCY
+    ========================== -->
+
+    <section id="transparency">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="section-kicker">اعتماد و شفافیت</div>
+
+          <h2 class="section-title">
+            نیکوکاری باید همراه با اعتماد و پاسخ‌گویی باشد
+          </h2>
+
+          <p class="section-description">
+            ما تلاش می‌کنیم همکاری‌ها و حمایت‌ها با مسئولیت‌پذیری و احترام
+            به اعتماد مردم انجام شود.
+          </p>
+        </div>
+
+        <div class="transparency-box reveal">
+
+          <h3>
+            مبارزه با سوءاستفاده از نام نیکوکاری
+          </h3>
+
+          <p>
+            اعتماد مردم و خیرین سرمایه‌ای ارزشمند است.
+            هیچ حمایت یا کمک‌رسانی نباید به نام کودکان و خانواده‌های نیازمند
+            بدون مسئولیت‌پذیری و شفافیت انجام شود.
+          </p>
+
+          <p>
+            مرکز نگین تلاش می‌کند در مسیر همکاری‌ها، اطلاعات لازم را روشن،
+            قابل پیگیری و مسئولانه ارائه کند و از استفاده نادرست از نام
+            کودکان دارای معلولیت جلوگیری شود.
+          </p>
+
+          <ul class="transparency-list">
+
+            <li>✓ احترام به کرامت کودکان</li>
+            <li>✓ مسئولیت‌پذیری در برابر حمایت‌ها</li>
+            <li>✓ ارتباط مستقیم با مرکز</li>
+            <li>✓ پرهیز از وعده‌های غیرواقعی</li>
+            <li>✓ همکاری با نهادهای معتبر</li>
+            <li>✓ اولویت‌دادن به نیاز واقعی کودک</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SUPPORT / COLLABORATION
+    ========================== -->
+
+    <section class="support" id="support">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="section-kicker">
+            دعوت به همکاری
+          </div>
+
+          <h2 class="section-title">
+            شما هم می‌توانید بخشی از این مسیر باشید
+          </h2>
+
+          <p class="section-description">
+            برای حمایت از کودکان، لازم نیست حتماً امکانات بزرگی داشته باشید؛
+            تخصص، زمان، ارتباط و کمک مالی هرکدام می‌تواند اثرگذار باشد.
+          </p>
+
+        </div>
+
+        <div class="support-grid">
+
+          <article class="support-card reveal">
+
+            <div class="service-icon">💰</div>
+
+            <h3>حمایت مالی</h3>
+
+            <p>
+              اگر می‌خواهید در تأمین هزینه خدمات آموزشی،
+              توانبخشی یا نیازهای ضروری مرکز سهیم شوید،
+              برای هماهنگی با ما تماس بگیرید.
+            </p>
+
+            <a
+              href="https://wa.me/93786838002?text=سلام،%20برای%20حمایت%20مالی%20از%20مرکز%20نگین%20می‌خواهم%20اطلاعات%20بیشتر%20دریافت%20کنم."
+              target="_blank"
+              rel="noopener"
+              class="btn btn-green"
+            >
+              💬 درخواست اطلاعات حمایت
+            </a>
+
+          </article>
+
+          <article class="support-card reveal">
+
+            <div class="service-icon">🙋</div>
+
+            <h3>همکاری داوطلبانه</h3>
+
+            <p>
+              اگر تخصص، زمان یا مهارتی دارید که می‌تواند به کودکان
+              و خانواده‌ها کمک کند، می‌توانید برای همکاری داوطلبانه
+              با مرکز ارتباط بگیرید.
+            </p>
+
+            <a
+              href="https://wa.me/93786838002?text=سلام،%20برای%20همکاری%20داوطلبانه%20با%20مرکز%20نگین%20علاقه‌مند%20هستم."
+              target="_blank"
+              rel="noopener"
+              class="btn btn-cyan"
+            >
+              🤝 اعلام آمادگی
+            </a>
+
+          </article>
+
+          <article class="support-card reveal">
+
+            <div class="service-icon">🏢</div>
+
+            <h3>همکاری سازمانی</h3>
+
+            <p>
+              نهادها، مؤسسات، شرکت‌ها و سازمان‌های علاقه‌مند
+              می‌توانند برای همکاری آموزشی، تخصصی یا اجتماعی
+              با مرکز تماس بگیرند.
+            </p>
+
+            <a
+              href="mailto:negineducationcenter@gmail.com?subject=درخواست همکاری سازمانی با مرکز نگین"
+              class="btn btn-primary"
+            >
+              ✉️ ارسال درخواست همکاری
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         NEGIN SMART
+    ========================== -->
+
+    <section class="smart" id="smart">
+
+      <div class="container">
+
+        <div class="smart-box reveal">
+
+          <div>
+
+            <div class="section-kicker">
+              فناوری برای دسترسی بهتر
+            </div>
+
+            <h2>
+              نگین هوشمند 🤖
+            </h2>
+
+            <p>
+              «نگین هوشمند» به عنوان یک ایده برای دسترسی آسان‌تر خانواده‌ها
+              به اطلاعات و راهنمایی‌های مرتبط با آموزش و توانبخشی کودکان
+              در حال توسعه است.
+            </p>
+
+            <ul class="smart-features">
+              <li>✓ پاسخ‌گویی اطلاعاتی</li>
+              <li>✓ راهنمایی درباره خدمات</li>
+              <li>✓ دسترسی آسان خانواده‌ها</li>
+              <li>✓ پشتیبانی از زبان دری</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">
+              دریافت اطلاعات بیشتر
+            </a>
+
+          </div>
+
+          <div class="smart-visual">
+
+            <div>
+              <div class="bot">🤖💎</div>
+
+              <h3>نگین هوشمند</h3>
+
+              <p>
+                فناوری در خدمت آموزش، ارتباط و توانمندسازی
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
+
+    <section id="testimonials">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="section-kicker">
+            خانواده‌ها
+          </div>
+
+          <h2 class="section-title">
+            صدای خانواده‌ها برای ما ارزشمند است
+          </h2>
+
+        </div>
+
+        <div class="testimonials">
+
+          <article class="testimonial reveal">
+
+            <p>
+              «برای ما مهم است که کودک‌مان در محیطی قرار بگیرد
+              که او را همان‌گونه که هست بپذیرند و برای پیشرفت او تلاش کنند.»
+            </p>
+
+            <strong>
+              — خانواده یکی از کودکان
+            </strong>
+
+          </article>
+
+          <article class="testimonial reveal">
+
+            <p>
+              «وقتی خانواده احساس کند تنها نیست، مسیر آموزش و توانبخشی
+              برای کودک نیز امیدبخش‌تر می‌شود.»
+            </p>
+
+            <strong>
+              — یکی از والدین
+            </strong>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <div class="reveal">
+
+            <div class="section-kicker" style="color:#7DE4EF;">
+              ارتباط با نگین
+            </div>
+
+            <h2 class="section-title">
+              با ما در تماس باشید
+            </h2>
+
+            <p class="contact-description">
+              برای دریافت معلومات درباره خدمات، ثبت درخواست همکاری،
+              حمایت از مرکز یا دریافت راهنمایی، از راه‌های زیر با ما تماس بگیرید.
+            </p>
+
+            <ul class="contact-list">
+
+              <li>
+                <div class="icon">📍</div>
+
+                <div>
+                  <strong>آدرس</strong>
+                  <span>
+                    سرک ۳۷، پروژه وزیر آباد، کابل، افغانستان
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">📞</div>
+
+                <div>
+                  <strong>شماره تماس</strong>
+                  <a href="tel:+93786838002" dir="ltr">
+                    ۰۷۸۶۸۳۸۰۰۲
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">💬</div>
+
+                <div>
+                  <strong>واتساپ</strong>
+                  <a
+                    href="https://wa.me/93786838002"
+                    target="_blank"
+                    rel="noopener"
+                    dir="ltr"
+                  >
+                    +93 786 838 002
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">✉️</div>
+
+                <div>
+                  <strong>ایمیل</strong>
+                  <a href="mailto:negineducationcenter@gmail.com" dir="ltr">
+                    negineducationcenter@gmail.com
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">🕐</div>
+
+                <div>
+                  <strong>ساعات کاری</strong>
+                  <span>
+                    شنبه تا چهارشنبه: ۸ صبح تا ۴ بعدازظهر<br>
+                    پنجشنبه: ۸ صبح تا ۱۲ ظهر
+                  </span>
+                </div>
+              </li>
+
+            </ul>
+
+            <div style="margin-top:25px;display:flex;gap:10px;flex-wrap:wrap;">
+
+              <a
+                href="tel:+93786838002"
+                class="btn btn-gold"
+              >
+                📞 تماس مستقیم
+              </a>
+
+              <a
+                href="https://wa.me/93786838002"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-green"
+              >
+                💬 واتساپ
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="map-box reveal">
+
+            <iframe
+              src="https://www.google.com/maps?q=مرکز%20آموزشی%20و%20توانبخشی%20نگین%20کابل&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="نقشه مرکز آموزشی و توانبخشی نگین"
+            ></iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         FINAL CTA
+    ========================== -->
+
+    <section class="final-cta">
+
+      <div class="container reveal">
+
+        <h2>
+          هر کودک یک نگین است؛ بیایید درخشش او را بیشتر کنیم. 💎
+        </h2>
+
+        <p>
+          یک تماس، یک همکاری، یک مهارت یا یک حمایت می‌تواند
+          آغاز یک فرصت تازه برای یک کودک باشد.
+        </p>
+
+        <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+
+          <a
+            href="https://wa.me/93786838002"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            💬 با ما صحبت کنید
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/UTwdrbUfqR6ewS9D9"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >
+            📍 مسیر مرکز
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+
+            <img
+              src="https://drive.google.com/thumbnail?id=1xFpErV2qCevAlACuaP2vpKcIwjzsOOZP&sz=w500"
+              alt="لوگوی نگین"
+            >
+
+            <div>
+              <strong>مرکز آموزشی و توانبخشی نگین</strong>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.55);">
+                هر کودک یک نگین
+              </div>
+            </div>
+
+          </div>
+
+          <p>
+            تلاش برای ایجاد فرصت‌های آموزشی، توانبخشی و حمایتی
+            برای کودکان دارای معلولیت و خانواده‌های آنان.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>دسترسی سریع</h3>
+
+          <ul>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#team">تیم ما</a></li>
+            <li><a href="#support">همکاری</a></li>
+            <li><a href="#contact">تماس</a></li>
+          </ul>
+
+        </div>
+
+        <div>
+
+          <h3>ارتباط</h3>
+
+          <ul>
+            <li>
+              <a href="tel:+93786838002">
+                📞 ۰۷۸۶۸۳۸۰۰۲
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:negineducationcenter@gmail.com">
+                ✉️ ایمیل
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/93786838002"
+                target="_blank"
+                rel="noopener"
+              >
+                💬 واتساپ
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/UTwdrbUfqR6ewS9D9"
+                target="_blank"
+                rel="noopener"
+              >
+                📍 موقعیت مرکز
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        © <span id="year"></span>
+        مرکز آموزشی و توانبخشی نگین.
+        تمامی حقوق محفوظ است.
+
+        <br>
+
+        طراحی و توسعه:
+        <strong style="color:#fff;">
+          QH VisionX
+        </strong>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       FLOATING ACTIONS
+  ========================== -->
+
+  <div class="floating">
+
+    <a
+      href="https://wa.me/93786838002"
+      target="_blank"
+      rel="noopener"
+      class="float-btn float-whatsapp"
+      aria-label="واتساپ"
+    >
+      💬
+    </a>
+
+    <a
+      href="tel:+93786838002"
+      class="float-btn float-phone"
+      aria-label="تماس"
+    >
+      📞
+    </a>
+
+  </div>
+
+  <button
+    class="to-top"
+    id="toTop"
+    aria-label="بازگشت به بالا"
+  >
+    ↑
+  </button>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+    /* سال جاری */
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    /* منوی موبایل */
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+      const open = navLinks.classList.toggle("open");
+
+      menuBtn.setAttribute(
+        "aria-expanded",
+        open ? "true" : "false"
+      );
+
+      document.body.classList.toggle(
+        "menu-open",
+        open
+      );
+    });
+
+    /* بستن منو هنگام انتخاب لینک */
+    document.querySelectorAll("#navLinks a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        document.body.classList.remove("menu-open");
+
+      });
+
+    });
+
+    /* دکمه بازگشت به بالا */
+    const toTop = document.getElementById("toTop");
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 500) {
+        toTop.classList.add("show");
+      } else {
+        toTop.classList.remove("show");
+      }
+
+    });
+
+    toTop.addEventListener("click", () => {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
+    /* انیمیشن ورود بخش‌ها */
+    const observer = new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    document.querySelectorAll(".reveal").forEach(
+      element => observer.observe(element)
+    );
+
+    /* جلوگیری از خطای لینک‌های داخلی */
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+      link.addEventListener("click", function(e) {
+
+        const id = this.getAttribute("href");
+
+        if (id === "#") return;
+
+        const target = document.querySelector(id);
+
+        if (target) {
+
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        }
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>
