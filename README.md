@@ -497,3 +497,44 @@
 
 </body>
 </html>
+    <!-- اطلاعات تماس -->
+    <section id="contact" style="border-bottom: none;">
+        <h2 class="section-title">اطلاعات تماس</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <strong>بنیان‌گذاران:</strong>
+                اسدالله حیدری و ساحل حیدری
+            </div>
+            <div class="contact-item">
+                <strong>مشاور و حامی کلیدی:</strong>
+                اجمیر خان میرزاد
+            </div>
+            <div class="contact-item">
+                <strong>شعار اجمیر خان میرزاد:</strong>
+                «با اراده می‌توان، با همت می‌سازیم»
+            </div>
+            <div class="contact-item">
+                <strong>آدرس مرکز:</strong>
+                سرک ۳۷، پروژه وزیر آباد، کابل، افغانستان
+                <br>
+                <a href="https://maps.app.goo.gl/UTwdrbUfqR6ewS9D9" target="_blank" class="btn-map">مشاهده در نقشه گوگل 📍</a>
+            </div>
+            <div class="contact-item">
+                <strong>شماره تماس:</strong>
+                <span dir="ltr">۰۷۸۶۸۳۸۰۰۲</span>
+            </div>
+            <div class="contact-item">
+                <strong>ایمیل:</strong>
+                <span dir="ltr">negineducationcenter@gmail.com</span>
+            </div>
+            <div class="contact-item" style="grid-column: 1 / -1;">
+                <strong>ساعات کاری:</strong>
+                شنبه تا چهارشنبه: ۸ صبح تا ۴ بعدازظهر | پنجشنبه: ۸ صبح تا ۱۲ ظهر
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
